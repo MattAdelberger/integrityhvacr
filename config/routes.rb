@@ -8,6 +8,13 @@ Integrityhvacr::Application.routes.draw do
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
+      get 'about_us' => 'application#about_us'
+      get 'services' => 'application#services'
+      get 'products' => 'application#products'
+      get 'faq' => 'application#faq'
+      get 'contact_us' => 'application#contact_us'
+      get 'financing' => 'application#financing'
+
   # Example of named route that can be invoked with purchase_url(id: product.id)
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
 

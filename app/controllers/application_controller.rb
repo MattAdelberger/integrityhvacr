@@ -4,6 +4,30 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
   def index
+  	@title = "Home"
   end
 
+  def about_us
+  	@title = "About Us"
+  end
+
+  def services
+  	@title = "Services"
+  end
+
+  def products
+  	@title = "Products"
+  end
+
+  def faq
+  	@title = "FAQ"
+  end
+
+  def contact_us
+  	@title = "Contact Us"
+  end
+
+  def financing
+  	@title = "Financing"
+  end
 end
