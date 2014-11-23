@@ -2,7 +2,7 @@
 <div class="container">
 	<div class="row">
 		<div class="col-lg-9">
-			<h1>Financing</h1>
+			<h2>Financing</h2>
 			<p>Through our partnership with Wells Fargo, we offer a variety 
 				of flexible options for financing your new product or system. 
 				That way, you can invest in your home’s comfort or respond to an 
@@ -11,10 +11,15 @@
 				Integrity Heating and Air Conditioning today and we will help to make 
 				sure that you are fit with the right plan and answer any questions that 
 				you may have.</p>
-			<%= image_tag("wells_fargo.png", height: '100%', width: '100%') %>
+			<div class="col-lg-8 col-lg-offset-2">
+				<%= link_to href: 'https://retailservices.wellsfargo.com/retailprivatelabel/initApp.do?profileNum=2710&dealerId=717559696',
+				 target: '_blank' do %>
+					<%= image_tag("wells_fargo.png", height: '100%', width: '100%') %>
+				<% end %>
+			</div>
 		</div>
 		<div class="col-lg-3">
-			Sidebar
+			<%= render partial: "application/sidebar" %>
 		</div>
 	</div>
 </div>

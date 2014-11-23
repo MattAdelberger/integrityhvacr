@@ -2,8 +2,23 @@ body {
 	background-color: #f9f9f9;
 }
 
+.navbar-inverse .navbar-nav > li > a:hover {
+	color: #01a6ea;
+}
+
+h1 {
+	font-size: 30px;
+}
+
+h2 {
+	padding-bottom: 20px;
+	border-bottom: 1px solid #bbb;
+}
+
 .navbar {
 	margin-bottom: 0;
+	border-radius: 0;
+	-webkit-border-radius: 0;
 }
 
 .carousel {
@@ -11,7 +26,9 @@ body {
 }
 
 .page-banner {
-	margin: 40px 0;
+	margin: 20px 0 0;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #bbb;
 }
 
 .page-header {
@@ -26,17 +43,36 @@ body {
 	-webkit-border-radius: 0;
 }
 
+.well {
+	font-size: 18px;
+	border-radius: 0;
+	-webkit-border-radius: 0;
+}
+
 .no-padding-left {
 	padding-left: 0 !important;
 }
 
 .front-page-panel {
 	img {
-		border: 4px solid #ccc;
+		border: 2px solid #bbb;
 		padding: 2px;
 		margin-bottom: 20px;
 	}
 	p {
 		text-align: justify;
+	}
+}
+
+.contact-us {
+	padding: 40px 60px;
+	margin-top: 20px;
+	border: 1px solid #bbb;
+	background: #eee;
+}
+
+@media screen and (max-width: 768px) {
+	.carousel-container {
+		padding: 0;
 	}
 }
