@@ -1,0 +1,45 @@
+<%= render partial: "application/page_banner" %>
+<div class="container">
+	<div class="row">
+		<div class="col-lg-9 col-md-9">
+			<h2>Residential</h2>
+			<div class="media">
+			  <a class="media-left col-lg-5 col-md-5" href="#">
+			    <%= image_tag("residential.jpg", height: '100%', width: '100%') %>
+			  </a>
+			    <p>Home is where the heart is and when you encounter sudden 
+			    	heating and cooling needs at home, Integrity is here to help.</p>
+			    <p>We understand how important heating and cooling can be in your home, 
+			    	that’s why we offer emergent service, complete with trained and 
+			    	licensed technicians who are dependable, knowledgeable and care about 
+			    	getting the job done right…the first time.</p>
+		    	<p>We can diagnosis, repair and replace your equipment, in addition 
+		    		to providing routine maintenance and clean and checks to keep you 
+		    		cool in summer and warm in winter.</p>
+		    	<p>We specialize in TRANE equipment, but can also service any 
+		    		make and model out there.</p>
+	    		<p>Additionally we offer many <%= link_to "financing", financing_path %> options for those unexpected
+	    		 and costly repair issues that come up when we least expect it.</p>
+	    		<h3>Services We offer</h3>
+	    		<ul>
+	    			<li>Furnaces</li>
+	    			<li>Air Conditioners</li>
+	    			<li>Humidifiers</li>
+	    			<li>Air Cleaners</li>
+	    			<li>Thermostats</li>
+	    			<li>Boilers</li>
+	    			<li>Ultra Violet Lights</li>
+	    			<li>Hot Water Heaters</li>
+	    			<li>Gas Air Conditioners</li>
+	    			<li>Electric Heat</li>
+	    			<li>Ductwork</li>
+	    		</ul>
+	    		<h5 class="text-center">INTEGRITY – <i>“Big enough to serve you small enough to care”</i></h5>
+	    		<h3 class="text-center">Call Us Today!</h3>
+			</div>
+		</div>
+		<div class="col-lg-3 col-md-3">
+			<%= render partial: "application/sidebar" %>
+		</div>
+	</div>
+</div>

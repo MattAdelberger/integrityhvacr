@@ -15,10 +15,31 @@ h2 {
 	border-bottom: 1px solid #bbb;
 }
 
+.form-control {
+	padding: 20px 10px;
+	border-radius: 0;
+	font-size: 16px;
+	color: #666666;
+	border-width: 2px;
+	border-color: #078fce;
+}
+
 .navbar {
 	margin-bottom: 0;
 	border-radius: 0;
 	-webkit-border-radius: 0;
+}
+
+.btn-primary {
+	border: 3px solid #078fce;
+	border-radius: 0;
+	background: white;
+	color: #333333;
+	font-size: 16px;
+	&:hover {
+		background: #078fce;
+		border-color: #078fce;
+	}
 }
 
 .carousel {
@@ -43,10 +64,13 @@ h2 {
 	-webkit-border-radius: 0;
 }
 
-.well {
+.front-page-callout {
 	font-size: 18px;
-	border-radius: 0;
-	-webkit-border-radius: 0;
+	padding: 0 0 40px 0;
+	.btn {
+		margin-top: 20px;
+		padding: 10px 10px;
+	}
 }
 
 .no-padding-left {
@@ -57,18 +81,30 @@ h2 {
 	img {
 		border: 2px solid #bbb;
 		padding: 2px;
-		margin-bottom: 20px;
+		margin-bottom: 10px;
 	}
 	p {
 		text-align: justify;
 	}
 }
 
+.sidebar {
+	img {
+		border: 2px solid #bbb;
+		padding: 2px;
+		margin-bottom: 20px;
+	}
+}
+
 .contact-us {
 	padding: 40px 60px;
 	margin-top: 20px;
-	border: 1px solid #bbb;
-	background: #eee;
+}
+
+.footer {
+	background: #000;
+	margin-top: 40px;
+	min-height: 300px;
 }
 
 @media screen and (max-width: 768px) {

@@ -30,4 +30,12 @@ class ApplicationController < ActionController::Base
   def financing
   	@title = "Financing"
   end
+
+   def residential
+    @title = "Residential"
+  end
+
+  def commercial
+    @title = "Commercial"
+  end
 end

@@ -26,19 +26,29 @@
       <ul class="nav navbar-nav">
       	<li><%= link_to "Home", root_path, :class => 'no-padding-left' %></li>
       	<li><%= link_to "About Us", about_us_path %></li>
-      	<li><%= link_to "Services", services_path %></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Services <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><%= link_to "Residential", residential_path %></li>
+            <li><%= link_to "Commercial", commercial_path %></li>
+          </ul>
+        </li>
       	<li><%= link_to "Products", products_path %></li>
       	<li><%= link_to "FAQ", faq_path %></li>
-      	<li><%= link_to "Contact Us", contact_us_path %></li>
+      	<!-- <li><%= link_to "Contact Us", contact_us_path %></li> -->
       	<li><%= link_to "Financing", financing_path %></li>
       </ul>
     </div><!-- /.navbar-collapse -->
 
-    <p class="hidden-xs navbar-text navbar-right">Social Media Icons</p>
+    <p class="hidden-xs navbar-text navbar-right"></p>
   </div>
 </nav>
 
 <%= yield %>
+
+<div class="footer">
+
+</div>
 
 </body>
 </html>
